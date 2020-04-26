@@ -60,8 +60,8 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : 'UA-164592212-1'
-  instant_search         : true
+  search_engine_id       : 
+  instant_search         : #
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -87,7 +87,7 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          :'UA-164592212-1'
     anonymize_ip         : # true, false (default)
 
 

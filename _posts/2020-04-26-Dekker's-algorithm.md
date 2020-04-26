@@ -8,24 +8,4 @@
 
 f0과 f1 두 개의 플래그(각각 임계영역에 들어갈 의향, 두 프로세스 사이의 우선권을 나타낸다)를 사용하여 구현할 수 있다.
 
-<h2>의사 코드</h2>
- f0 ← false
- f1 ← false
- turn ← 0   // or 1
-
- p0:                                 p1:
-     f0 ← true                         f1 ← true
-     while f1 {                          while f0 {
-         if turn ≠ 0 {                       if turn ≠ 1 {
-             f0 ← false                         f1 ← false
-             while turn ≠ 0 {                    while turn ≠ 1 {
-             }                                   }
-             f0 ← true                          f1 ← true
-          }                                  }
-     }                                    }
-
-    // 임계 구역                              // 임계 구역 
-    ...                                   ...
-    // 나머지 구역                            // 나머지 구역
-    turn ← 1                             turn ← 0
-    f0 ← false                           f1 ← false
+<h2>의사 코드</h2>  

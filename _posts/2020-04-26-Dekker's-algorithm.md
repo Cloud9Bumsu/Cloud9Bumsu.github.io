@@ -9,3 +9,4 @@
 f0과 f1 두 개의 플래그(각각 임계영역에 들어갈 의향, 두 프로세스 사이의 우선권을 나타낸다)를 사용하여 구현할 수 있다.
 
 <h2>의사 코드</h2>  
+![Decker's Algorithm,](https://user-images.githubusercontent.com/38879149/80297679-476cba80-87c0-11ea-8085-0e186e98f7e8.png)
